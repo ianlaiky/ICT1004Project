@@ -66,10 +66,3 @@ fabric.properties
 .idea/caches/build_file_checksums.ser
 /test/nbproject/private/
 
-#netbeans stuff
-*/project.properties
-*/project.xml
-
-/nbproject/*
-test/nbproject/project.properties
-test/nbproject/project.xml
