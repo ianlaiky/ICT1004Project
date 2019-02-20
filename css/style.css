@@ -1313,7 +1313,9 @@ input[type="text"] {
     width: 50px;
     height: 50px;
     display: table;
-    background: #f7b633;
+    /* WAILEONG: Can change gototop color */
+    /* background: #f7b633; */
+    background: red;
     color: #fff;
     text-align: center;
     -webkit-border-radius: 4px;
