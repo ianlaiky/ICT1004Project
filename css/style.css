@@ -510,7 +510,8 @@ h1, h2, h3, h4, h5, h6, figure {
 .colorlib-about-img,
 .services-img,
 .project-img {
-  background-size: cover;
+  /* WAILEONG - changed background-size from cover to auto to make the pic in the tabs display in original size. */
+  background-size: auto;
   background-position: center center;
   background-repeat: no-repeat;
   position: relative; }
