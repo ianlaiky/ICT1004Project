@@ -316,7 +316,9 @@ h1, h2, h3, h4, h5, h6, figure {
         #colorlib-hero .flexslider .flex-control-nav li a.flex-active {
           cursor: pointer;
           background: transparent;
-          background: #F7B633; }
+          /* WAILEONG: line to change the slider dot color */
+          background: rgba(211, 5, 5, 0.897); }
+          /* background: #F7B633; } */
     #colorlib-hero .flexslider .flex-direction-nav {
       display: none; }
     #colorlib-hero .flexslider .slider-text {

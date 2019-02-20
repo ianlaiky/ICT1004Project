@@ -1,3 +1,5 @@
 line 94 onwards of index-html - change the image to display on carousel
 line 291 onwards of css/style.css - to change the overlay over the background image on carousel 
 line 1317 of css/style.css - change gototop color
+line 281 of css/style.css - can change how images are display on carousel - currently default to cover. 
+line 320 of css/style-css - can change the color of the slider dot. 
