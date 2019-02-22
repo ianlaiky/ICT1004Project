@@ -18,6 +18,12 @@ body {
   color: gray;
   background: whitesmoke; }
 
+/* YISHENG TESTING GLYPHICON COLOR */
+.glyphicon-map-marker{
+    color: yellow;
+    left:10px;
+} 
+
 #page {
   position: relative;
   overflow-x: hidden;
