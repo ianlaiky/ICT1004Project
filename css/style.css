@@ -518,7 +518,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .project-img {
   /* WAILEONG - changed background-size from cover to auto to make the pic in the tabs display in original size. */
  /* Eric change background-size:auto; to background-size: 280px 350px; */
-  background-size: 280px 350px;
+  background-size: auto;
   background-position: center center;
   background-repeat: no-repeat;
   position: relative; }
