@@ -27,6 +27,9 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
+	<!--Jerome - CSS for side nav bar-->
+	<script src="css/overwrite.css" rel="stylesheet"></script>
+
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -111,7 +114,15 @@
 			  	</ul>
 		  	</div>
 		</aside>
-		
+
+		<!--Jerome - Persistant sticky side bar-->
+		<div id="sidebar" class="sidenav">
+			<a href="#">About</a>
+			<a href="#">Services</a>
+			<a href="#">Clients</a>
+			<a href="#">Contact</a>
+	  </div>
+
 		<div id="colorlib-project">
 			<div id="snow-ice" class="container">
 				<div class="row">
@@ -922,7 +933,43 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> | Mad
 	<script src="js/jquery.countTo.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
-
+	<!--Jerome - Custom Overrides-->
+	<!--<script>
+		$(window).scroll(function() {
+   var hT = $('#healthy-pastes').offset().top,
+       hH = $('#healthy-pastes').outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+    console.log((hT-wH) , wS);
+   if (wS > (hT+hH-wH)){
+     alert('you have scrolled to the h1!');
+   }
+});
+	</script>-->
+	<script>
+		$(document).ready(function() {
+						function isScrolledTo(elem) {
+								var docViewTop = $(window).scrollTop(); //num of pixels hidden above current screen
+								var docViewBottom = docViewTop + $(window).height();
+								var elemTop = $(elem).offset().top; //num of pixels above the elem
+								var elemBottom = elemTop + $(elem).height();
+								return ((elemTop <= docViewTop));
+						}
+						var catcher = $('#colorlib-hero');
+						var sticky = $('#sidebar');
+						$(window).scroll(function() {
+								if(isScrolledTo(sticky)) {
+										sticky.css('position','fixed');
+										sticky.css('top','0px');
+								}
+					var stopHeight = catcher.offset().top + catcher.height();
+					if ( stopHeight > sticky.offset().top) {
+										sticky.css('position','absolute');
+										sticky.css('top',stopHeight);
+								}
+						});
+				});
+		</script>
 	</body>
 </html>
 
