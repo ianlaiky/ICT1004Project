@@ -529,6 +529,10 @@ h1, h2, h3, h4, h5, h6, figure {
   background-repeat: no-repeat;
   position: relative; }
 
+.resizeMenuImg {
+  background-size: 280px 350px;
+}
+
 .aside-stretch {
   background: #F7B633; }
   .aside-stretch:after {
