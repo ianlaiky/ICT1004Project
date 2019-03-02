@@ -22,10 +22,10 @@
     <meta name="twitter:card" content=""/>
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,700" rel="stylesheet">
-        <!-- these 3 lines below for glyphicon -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- these 3 lines below for glyphicon -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- Animate.css -->
     <link rel="stylesheet" href="css/animate.css">
@@ -57,10 +57,52 @@
     <script src="js/respond.min.js"></script>
     <![endif]-->
 
+    <style>
+        .modal-dialog{
+            width:850px;
+
+
+        }
+    </style>
+
+    <script>
+
+
+        $().ready(function () {
+            document.getElementById("btnOpenpop").style.visibility = 'hidden';
+           $("#btnOpenpop").trigger('click');
+        });
+    </script>
 </head>
 <body>
 
 <div class="colorlib-loader"></div>
+
+<!-- popup modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Promotions!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <iframe width="800" height="600" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--end popup modal-->
 
 <div id="page">
     <nav class="colorlib-nav" role="navigation">
@@ -68,7 +110,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-2">
-                        <div id="colorlib-logo"><a href="index.html"><img src="images/store-logo.png" alt="storeLogo" title="storeLogo"/></a></div>
+                        <div id="colorlib-logo"><a href="index.html"><img src="images/store-logo.png" alt="storeLogo"
+                                                                          title="storeLogo"/></a></div>
                     </div>
                     <div class="col-xs-10 text-right menu-1">
                         <ul>
@@ -94,7 +137,7 @@
         </div>
     </nav>
     <!-- IAN : li style="background-image" are images we can change to put in carousel.  -->
-    
+
     <aside id="colorlib-hero">
         <div class="flexslider">
             <ul class="slides">
@@ -175,10 +218,21 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="services-desc">
-                                        <p>Mei Heong Yuen is proud to be one of the “Singapore Chinatown Heritage Brands”, an initiative by Chinatown Business Association to introduce long established heritage brand names to Singapore visitors. </p>
-                                        
-                                        <p>Mei Heong Yuen‘s commitment to quality has helped established the FARMER BRAND into a household name synonymous with good quality and excellence. For over 50 years, in the pursuit of excellence, the FARMER BRAND of peanuts has been recognized for its’ excellent quality, great value and established brand.</p>
+                                        <p>Mei Heong Yuen is proud to be one of the “Singapore Chinatown Heritage
+                                            Brands”, an initiative by Chinatown Business Association to introduce long
+                                            established heritage brand names to Singapore visitors. </p>
+
+                                        <p>Mei Heong Yuen‘s commitment to quality has helped established the FARMER
+                                            BRAND into a household name synonymous with good quality and excellence. For
+                                            over 50 years, in the pursuit of excellence, the FARMER BRAND of peanuts has
+                                            been recognized for its’ excellent quality, great value and established
+                                            brand.</p>
                                     </div>
+                                    <!-- Button trigger modal -->
+                                    <button id="btnOpenpop" type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#exampleModal">
+                                        Launch demo modal
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -190,8 +244,15 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="services-desc">
-                                        <p>Mei Heong Yuen started with a trade brand 'FARMER BRAND GROUNDNUTS' and was popular with local and foreigners. It has been recognized for its' excellent quality and became an estabalished brand. </p>
-                                        <p>With the daughters of Mei Heong Yuen, Connie and Clara Lee, they further develop what was already established into another franchise, known to be Mei Heong Yuen Dessert 味香园甜品 today. Started with peanuts that are fragrant and delicately grounded as ingredient of the dessert, the brainchilds came up newer flavors. Today, the franchise specializes in different varieties of pastes but staying connected to its root to serve traditional desserts. </p>
+                                        <p>Mei Heong Yuen started with a trade brand 'FARMER BRAND GROUNDNUTS' and was
+                                            popular with local and foreigners. It has been recognized for its' excellent
+                                            quality and became an estabalished brand. </p>
+                                        <p>With the daughters of Mei Heong Yuen, Connie and Clara Lee, they further
+                                            develop what was already established into another franchise, known to be Mei
+                                            Heong Yuen Dessert 味香园甜品 today. Started with peanuts that are fragrant and
+                                            delicately grounded as ingredient of the dessert, the brainchilds came up
+                                            newer flavors. Today, the franchise specializes in different varieties of
+                                            pastes but staying connected to its root to serve traditional desserts. </p>
                                     </div>
                                 </div>
                             </div>
@@ -205,13 +266,19 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="services-desc">
-                                        <p>Serving traditional desserts that are sufficiently sweet and without being cloying, it offers to be a great dessert for rounding up a satisfying meal.</p>
+                                        <p>Serving traditional desserts that are sufficiently sweet and without being
+                                            cloying, it offers to be a great dessert for rounding up a satisfying
+                                            meal.</p>
                                         <ul>
-                                            <li>- Refreshing Snow ice 雪花冰 that comes in thin smooth mouth-feel sheets with fine powered snow.</li>
+                                            <li>- Refreshing Snow ice 雪花冰 that comes in thin smooth mouth-feel sheets
+                                                with fine powered snow.
+                                            </li>
                                             <li>- Special dessert 糖水炖品 that quernch desiccated throats.</li>
                                             <li>- Cakes & Dumplings 糕点米粽 that are keep you wanting more.</li>
-                                            <li>- Healthy Paste 叫糊吃糊 that are nourishing yet soothe your craving taste buds.</li>
-                                        </ul>   
+                                            <li>- Healthy Paste 叫糊吃糊 that are nourishing yet soothe your craving taste
+                                                buds.
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -225,10 +292,17 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="services-desc">
-                                        <p>Mei Heong Yuen Desserts was awarded the BEST FOOD AWARDS 2009/2010 by "The Green Book" and was also recognized as a recommended choice in the Singapore "Ice Kachang" category as part of CNNGo's Best Eats 2010 Awards. We were also awarded the Top 100 Singapore Excellent Award 2011 / 2012</p>
-                                        
-                                        <p>We were also featured as a recommended dessert outlet under the show “Snack Attack 2 and has been on various newspaper articles such as "Lian He Wan Bao" 联合晚报, "Sin Ming Ri Bao" 新明日报, Weekend Today, "Guang Ming Ri Bao" 光明日报 and Japanese newspaper “Shin Nichi Ho”"</p>
+                                        <p>Mei Heong Yuen Desserts was awarded the BEST FOOD AWARDS 2009/2010 by "The
+                                            Green Book" and was also recognized as a recommended choice in the Singapore
+                                            "Ice Kachang" category as part of CNNGo's Best Eats 2010 Awards. We were
+                                            also awarded the Top 100 Singapore Excellent Award 2011 / 2012</p>
+
+                                        <p>We were also featured as a recommended dessert outlet under the show “Snack
+                                            Attack 2 and has been on various newspaper articles such as "Lian He Wan
+                                            Bao" 联合晚报, "Sin Ming Ri Bao" 新明日报, Weekend Today, "Guang Ming Ri Bao" 光明日报
+                                            and Japanese newspaper “Shin Nichi Ho”"</p>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
