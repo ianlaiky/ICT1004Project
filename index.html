@@ -58,10 +58,15 @@
     <![endif]-->
 
     <style>
-        .modal-dialog{
-            width:850px;
 
 
+        .promotion-pic {
+
+            padding: 0;
+            display: block;
+            margin: 0 auto;
+            max-height: 100%;
+            max-width: 100%;
         }
     </style>
 
@@ -70,7 +75,7 @@
 
         $().ready(function () {
             document.getElementById("btnOpenpop").style.visibility = 'hidden';
-           $("#btnOpenpop").trigger('click');
+            $("#btnOpenpop").trigger('click');
         });
     </script>
 </head>
@@ -81,7 +86,7 @@
 <!-- popup modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
      aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Promotions!</h5>
@@ -90,9 +95,9 @@
                 </button>
             </div>
             <div class="modal-body">
-                <iframe width="800" height="600" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                <div class="imgbox">
+                    <img class="promotion-pic" src="images/promotion.jpg"/>
+                </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
