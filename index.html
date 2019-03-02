@@ -68,6 +68,23 @@
             max-height: 100%;
             max-width: 100%;
         }
+        .modal-content{
+            background-color: bisque;
+        }
+        #exampleModalLabel{
+            font-size: 3em;
+           text-align: center;
+           font-family:fantasy
+        }
+        .close{
+            opacity: initial;
+            font-size: 4em;
+            color:darkred;
+        }
+        .close:hover{
+          color: red;
+          opacity: initial;
+        }
     </style>
 
     <script>
@@ -89,18 +106,20 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Promotions!</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                    <button type="button" class="btn close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                <h5 class="modal-title" id="exampleModalLabel">Check out our latest promotions!</h5>
+                
             </div>
             <div class="modal-body">
                 <div class="imgbox">
-                    <img class="promotion-pic" src="images/promotion.jpg"/>
+                    <img class="img-thumbnail img-responsive promotion-pic" src="images/promotion.jpg"/>
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
 
             </div>
         </div>
