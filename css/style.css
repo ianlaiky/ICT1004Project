@@ -1599,3 +1599,28 @@ input[type="text"] {
 
 .js .animate-box {
   opacity: 0; }
+
+  .promotion-pic {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+.modal-content{
+    background-color: bisque;
+}
+#exampleModalLabel{
+    font-size: 3em;
+   text-align: center;
+   font-family:fantasy
+}
+.close{
+    opacity: initial;
+    font-size: 4em;
+    color:darkred;
+}
+.close:hover{
+  color: red;
+  opacity: initial;
+}
