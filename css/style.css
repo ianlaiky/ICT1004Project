@@ -1624,3 +1624,4 @@ input[type="text"] {
   color: red;
   opacity: initial;
 }
+body { padding-right: 0 !important }
