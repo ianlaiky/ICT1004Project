@@ -405,12 +405,18 @@ h1, h2, h3, h4, h5, h6, figure {
 #colorlib-about,
 #colorlib-services,
 #colorlib-contact,
-#colorlib-testimony,
+/* #colorlib-testimony, */
 #colorlib-blog,
 #colorlib-project,
 #colorlib-subscribe {
   padding: 7em 0;
   clear: both; }
+
+/* WAILEONG: removed colorlib-testimony from above to modify the padding for it specifically. */
+#colorlib-testimony{
+  padding: 4em 0;
+  clear:both;
+  }
 
 #colorlib-intro {
   clear: both; }
@@ -721,11 +727,13 @@ h1, h2, h3, h4, h5, h6, figure {
       #colorlib-testimony .testimony-slide blockquote p {
         font-size: 14px; }
   #colorlib-testimony .testimony-wrap {
-    padding: 3em;
+    /* WAILEONG: removed for good video looking :) */
+    /* padding: 3em; */
     width: 100%;
     float: left; }
-  #colorlib-testimony .owl-stage-outer {
-    padding-top: 6em; }
+  /* WAILEONG: removed for good video looking :)  */
+  /* #colorlib-testimony .owl-stage-outer {
+    padding-top: 6em; } */
 
 #colorlib-counter {
   position: relative; }
@@ -1094,7 +1102,8 @@ input[type="text"] {
         font-size: 20px; }
 
 .colorlib-heading {
-  margin-bottom: 5em; }
+  /* WAILEONG: changed from 5em to 0em for nicer video looking :) */
+  margin-bottom: 0em; }
   .colorlib-heading h2 {
     font-size: 30px;
     font-weight: 500;
