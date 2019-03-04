@@ -428,3 +428,8 @@ function fixStepIndicator(n) {
 
 
 }());
+
+$().ready(function () {
+	document.getElementById("btnOpenpop").style.visibility = 'hidden';
+	$("#btnOpenpop").trigger('click');
+});
