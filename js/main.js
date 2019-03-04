@@ -296,6 +296,7 @@
 	var ModalClickEvent = function(){
 		// Get the modal
 		var modal = document.getElementById('formModal');
+		if(modal == null){ return; }
 
 		// Get the button that opens the modal
 		var btn = document.getElementById("modalButton");
@@ -323,9 +324,11 @@
 
 		var FormController = function(){
 			var currentTab = 0; // Current tab is set to be the first tab (0)
-			showTab(currentTab); // Display the current tab
 			var prevBtn = document.getElementById("prevBtn");
 			var nextBtn = document.getElementById("nextBtn");
+			if(prevBtn == null || nextBtn == null){ return;}
+			showTab(currentTab); // Display the current tab
+			
 
 			function showTab(n) {
 				// This function will display the specified tab of the form ...
