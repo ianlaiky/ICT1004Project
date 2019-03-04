@@ -30,7 +30,7 @@
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 25px; /* Location of the box */
+  padding-top: 50px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -82,12 +82,24 @@
 }
 
 .modal-header {
-  padding: 2px 16px;
-  background-color: #5cb85c;
+  padding-top: 4px 16px;
+  background-color: #ff7979c2;
   color: white;
 }
 
-.modal-body {padding: 2px 16px;}
+.modal-header h2 {
+  margin-bottom: 0px;
+}
+
+.modal-body {
+  padding: 2px 6px;
+  color: black;
+}
+
+.modal-body h3 {
+  font-size: 18px;
+  font-style: italic; 
+}
 
 .modal-footer {
   padding: 2px 16px;
@@ -99,17 +111,17 @@
 /* Style the form */
 #regForm {
   background-color: #ffffff;
-  margin: 100px auto;
-  padding: 40px;
+  margin: 0px auto;
+  padding: 20px;
   width: 70%;
   min-width: 300px;
 }
 
 /* Style the input fields */
-input {
-  padding: 10px;
+.textbox {
+  padding: 8px;
   width: 100%;
-  font-size: 17px;
+  font-size: 16px;
   font-family: Raleway;
   border: 1px solid #aaaaaa;
 }
