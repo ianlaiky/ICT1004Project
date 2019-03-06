@@ -127,7 +127,7 @@ h1, h2, h3, h4, h5, h6, figure {
         transition: 0.5s; }
         .colorlib-nav ul li a:hover {
           /* WAILEONG: change the color of hover state in navbar */
-          color: red;}
+          color: whitesmoke;}
           /* color: #F7B633; } */
       .colorlib-nav ul li.has-dropdown {
         position: relative; }
@@ -181,7 +181,7 @@ h1, h2, h3, h4, h5, h6, figure {
                 color: #fff; }
         .colorlib-nav ul li.has-dropdown:hover a, .colorlib-nav ul li.has-dropdown:focus a {
           /* WAILEONG: change color of menu hover state. */
-          color: red;}
+          color: whitesmoke;}
           /* color: #F7B633; } */
       .colorlib-nav ul li.btn-cta a {
         padding: 30px 0px !important;
@@ -207,7 +207,7 @@ h1, h2, h3, h4, h5, h6, figure {
       .colorlib-nav ul li.active > a {
         /* color: #F7B633 !important; */
         /* WAILEONG: change the color of active in navbar */
-        color: red !important;
+        color:mediumvioletred !important;
         position: relative; }
         .colorlib-nav ul li.active > a:after {
           opacity: 1;
@@ -330,7 +330,7 @@ h1, h2, h3, h4, h5, h6, figure {
           cursor: pointer;
           background: transparent;
           /* WAILEONG: line to change the slider dot color */
-          background: rgba(211, 5, 5, 0.897); }
+          background: bisque; }
           /* background: #F7B633; } */
     #colorlib-hero .flexslider .flex-direction-nav {
       display: none; }
@@ -1348,7 +1348,7 @@ input[type="text"] {
     display: table;
     /* WAILEONG: Can change gototop color */
     /* background: #f7b633; */
-    background: red;
+    background: brown;
     color: #fff;
     text-align: center;
     -webkit-border-radius: 4px;
