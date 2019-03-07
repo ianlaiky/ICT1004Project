@@ -22,11 +22,6 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,700" rel="stylesheet">
 	
-    <!-- these 3 lines below for glyphicon -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	
 	<!--Jerome - CSS for side nav bar-->
 	<link rel="stylesheet" href="css/overwrite.css">
 
@@ -61,11 +56,12 @@
 	<![endif]-->
 
 	</head>
-	<body>
+	<body data-spy="scroll" data-target=".navbar" data-offset="50">
 		
 	<div class="colorlib-loader"></div>
 
 	<div id="page">
+		<!--Nav bar at the top-->
 		<nav class="colorlib-nav" role="navigation">
 			<div class="top-menu">
 				<div class="container">
@@ -86,9 +82,7 @@
 											<li><a href="menu.html#drinks">Drinks</a></li>
 										</ul>
 									</li>
-									<!-- <li><a href="services.html">Services</a></li> -->
 									<li><a href="locations.html">Locate Us</a></li>
-									<!-- <li><a href="about.html">About</a></li> -->
 									<li><a href="franchise.html">Franchise</a></li>
 								</ul>
 						</div>
@@ -96,6 +90,7 @@
 				</div>
 			</div>
 		</nav>
+		<!--Custom jumbotron-->
 		<aside id="colorlib-hero">
 			<div class="flexslider">
 				<ul class="slides">
@@ -124,14 +119,24 @@
 			<a href="menu.html#drinks">Drinks</a>
 		</div>
 
+		<!--Jerome - Persistant nav bar for smaller screens (shrinks content in even smaller screens)-->
 		<nav class="navbar navbar-inverse visible-sm visible-xs visible-md" data-spy="affix" data-offset-top="710">
-			<ul class="nav navbar-nav">
-				<li><a href="menu.html#snow-ice">Snow Ice</a></li>
-				<li><a href="menu.html#special-dessert">Special Dessert</a></li>
-				<li><a href="menu.html#cakes-and-dumplings">Cakes and Dumplings</a></li>
-				<li><a href="menu.html#healthy-pastes">Healthy Pastes</a></li>
-				<li><a href="menu.html#drinks">Drinks</a></li>
-			</ul>
+				<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>                        
+						</button>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav">
+								<li><a href="menu.html#snow-ice">Snow Ice</a></li>
+								<li><a href="menu.html#special-dessert">Special Dessert</a></li>
+								<li><a href="menu.html#cakes-and-dumplings">Cakes and Dumplings</a></li>
+								<li><a href="menu.html#healthy-pastes">Healthy Pastes</a></li>
+								<li><a href="menu.html#drinks">Drinks</a></li>
+							</ul>
+				</div>
 		</nav>
 
 		<div id="colorlib-project">
@@ -140,11 +145,9 @@
 					<div class="text-center">
 							<h1>Snow Ice</h1>
 					</div>
-					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
+					<div class="col-lg-3 col-md-4 col-sm-6 animate-box"> <!--All boxes shrink as viewport shrinks.-->
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/snowIce/mango.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Mango <br>芒果</h3>
 							</div>
@@ -153,8 +156,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/snowIce/greentea.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Green Tea <br>绿茶</h3>
 							</div>
@@ -163,8 +164,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/snowIce/Durian.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Durian <br>榴莲</h3>
 							</div>
@@ -173,8 +172,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/snowIce/soursoup.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Soursop <br>红毛榴莲</h3>
 							</div>
@@ -183,8 +180,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/snowIce/sesame.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 									<h3>Sesame<br>芝麻</h3>
 									                                                      
@@ -194,8 +189,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/snowIce/Almond.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Almond<br>杏仁</h3>
 							</div>
@@ -204,8 +197,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/snowIce/strawberry.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Strawberry<br>草莓</h3>
 							</div>
@@ -214,8 +205,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/snowIce/mocha.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
                   <h3>Mocha<br>咖啡</h3>
 							</div>
@@ -224,8 +213,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/snowIce/chocolate.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Chocolate<br>巧克力</h3>
                                                                 
@@ -235,8 +222,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/snowIce/Peanut.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Peanut<br>花生</h3>
                                                                 
@@ -246,8 +231,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/snowIce/Lime.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Lime<br>酸柑</h3>
                                                                 
@@ -257,8 +240,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/snowIce/Lychee.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Lychee<br>荔枝</h3>
                                                                 
@@ -268,8 +249,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/snowIce/watermelon&lychee.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Watermelon & Lychee<br>西瓜荔枝</h3>
                                                                 
@@ -279,8 +258,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/snowIce/almond&sesame.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Almond & Sesame<br>杏仁芝麻</h3>
                                                                 
@@ -290,8 +267,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/snowIce/Chendol.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Chendol<br>浆罗</h3>
 							</div>
@@ -300,8 +275,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/snowIce/BananaChoc.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Banana Choc<br>香蕉巧克力</h3>
 							</div>
@@ -310,8 +283,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/snowIce/Mango&Strawberry.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Mango & Strawberry<br>芒果草莓</h3>
 							</div>
@@ -320,8 +291,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/snowIce/sweetcorn.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Sweet Corn<br>玉米</h3>
 							</div>
@@ -330,8 +299,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/snowIce/Milkteasnowice.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Milk Tea Snow Ice<br>珍珠奶茶雪花冰</h3>
 							</div>
@@ -340,8 +307,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/snowIce/Pineapplesnowice.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Pineapple Snow Ice<br>凤梨雪花冰</h3>
 							</div>
@@ -350,8 +315,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/snowIce/Mangolycheesnowice.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Mango Lychee Snow Ice<br>芒果荔枝雪花冰</h3>
 							</div>
@@ -368,8 +331,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/specialdessert/Mangowithpomelo&sago.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Mango with Pomelo & Sago<br>杨枝甘露</h3>
 							</div>
@@ -378,8 +339,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/specialdessert/Mangopudding.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Mango Pudding<br>芒果布丁</h3>
 							</div>
@@ -388,8 +347,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/specialdessert/Eggpudding.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Egg Pudding with ginger<br>炖鸡蛋(姜汁)</h3>
 							</div>
@@ -398,8 +355,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/specialdessert/Milkpudding.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Milk Pudding<br>炖鲜奶</h3>
 							</div>
@@ -408,8 +363,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/specialdessert/yampaste.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Yam paste<br>芋泥</h3>
 							</div>
@@ -418,8 +371,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/specialdessert/DriedBeancurdwithGingko&Barley.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Ginko & Barley Beancurd<br>腐竹白果薏米水</h3>
 							</div>
@@ -428,8 +379,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/specialdessert/waterchestnutwithsweetcorn.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Water Chestnut with sweetcorn<br>马蹄露</h3>
 							</div>
@@ -438,8 +387,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/specialdessert/Almondwitheggwhite.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Almond with Egg white<br>杏汁蛋白</h3>
 							</div>
@@ -448,8 +395,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/specialdessert/GlutinousRiceBallinGingerSoup.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Glutinous Rice Ball in Ginger Soup<br>汤圆(姜汤)</h3>
 							</div>
@@ -458,8 +403,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/specialdessert/herbaljelly.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Herbal Jelly<br>清凉龟苓膏</h3>
 							</div>
@@ -468,8 +411,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/specialdessert/Redbeanlotus.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Red bean lotus<br>红豆莲子</h3>
 							</div>
@@ -478,8 +419,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/specialdessert/Chengtng.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Cheng Tng<br>清汤</h3>
 							</div>
@@ -488,8 +427,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/specialdessert/AlmondBlackGlutinousRice.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Almond Black Glutinous Rice<br>杏仁黑糯米</h3>
 							</div>
@@ -498,8 +435,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/specialdessert/premiumbirdsnest.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Premium Bird's Nest<br>燕窝</h3>
 							</div>
@@ -508,8 +443,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/specialdessert/Durianmochi.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Durian Mochi<br>榴莲麻糬</h3>
 							</div>
@@ -518,8 +451,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/specialdessert/Almondwithblackglutinous.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Almond with Black Glutinous<br>杏仁黑糯米</h3>
 							</div>
@@ -528,8 +459,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/specialdessert/Blackglutinousrice.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Black Glutinous Rice<br>黑糯米</h3>
 							</div>
@@ -538,8 +467,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/specialdessert/Lemongrassjelly.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Lemongrass Jelly<br>香芧芦荟</h3>
 							</div>
@@ -548,8 +475,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/specialdessert/Mangostickyrice.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Mango Sticky Rice<br>芒果糯米饭</h3>
 							</div>
@@ -558,8 +483,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/specialdessert/papayawhitefungus.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Papaya White Fungus<br>木瓜炖白木耳</h3>
 							</div>
@@ -568,8 +491,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/specialdessert/Whitewheat.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>White Wheat<br>大麦粥</h3>
 							</div>
@@ -587,8 +508,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/Cakes&Dumplings/cantonesedumplings.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Cantonese Dumplings<br>广东肉粽子</h3>
 							</div>
@@ -597,8 +516,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/Cakes&Dumplings/GlutinousRicechicken.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Glutnous Chicken Rice<br>糯米鸡</h3>
 							</div>
@@ -607,8 +524,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/Cakes&Dumplings/yamcakes.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Yam cakes<br>芋头糕</h3>
 							</div>
@@ -617,8 +532,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/Cakes&Dumplings/carrotcakes.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Carrot cakes<br>萝卜糕</h3>
 							</div>
@@ -627,8 +540,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/Cakes&Dumplings/pumpkincakes.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Pumpkin Cakes<br>南瓜糕</h3>
 							</div>
@@ -637,8 +548,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/Cakes&Dumplings/3-colourcakes.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>3-Colour Cakes<br>三色糕</h3>
 							</div>
@@ -647,8 +556,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/Cakes&Dumplings/CheeCheongFun.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Chee Cheong Fun<br>斋肠粉</h3>
 							</div>
@@ -657,8 +564,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/Cakes&Dumplings/Waterchestnutcakes.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Water Chestnut Cakes<br>马蹄糕</h3>
 							</div>
@@ -667,8 +572,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/Cakes&Dumplings/Coconutpudding.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Coconut pudding<br>椰汁糕</h3>
 							</div>
@@ -677,8 +580,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/Cakes&Dumplings/Mangoroll.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Mango Roll<br>芒果卷</h3>
 							</div>
@@ -695,8 +596,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/healthypaste/Almondpaste.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Almond Paste<br>生磨杏仁糊</h3>
 							</div>
@@ -705,8 +604,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/healthypaste/walnutpaste.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Walnut Paste<br>生磨核桃糊</h3>
 							</div>
@@ -715,8 +612,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/healthypaste/Sesamepaste.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Sesame Paste<br>生磨芝麻糊</h3>
 							</div>
@@ -725,8 +620,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/healthypaste/Peanutpaste.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Peanut Paste<br>生磨花生糊</h3>
 							</div>
@@ -743,8 +636,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/drinks/Mangosmoothie.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Mango Smoothie<br>芒果冰沙</h3>
 							</div>
@@ -753,8 +644,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/drinks/grassjelly.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Grass Jelly<br>仙草</h3>
 							</div>
@@ -763,8 +652,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/drinks/peachoolongtea.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Peach Oolong Tea<br>白桃烏龍茶</h3>
 							</div>
@@ -773,8 +660,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/drinks/Peachparadisefruittea.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Peach Paradise Fruit Tea<br>水蜜桃天堂</h3>
 							</div>
@@ -783,8 +668,6 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 animate-box">
 						<div class="project-entry">
 							<a class="project-img resizeMenuImg text-center" style="background-image: url(images/drinks/Chamomilecitrongreentea.bmp);"> </a>
-							<!-- <a href="menu.html#snow-ice" class="project-img resizeMenuImg text-center" style="background-image: url(images/building-1.jpg);">
-							</a> -->
 							<div class="desc">
 								<h3>Chamomile Citron Green Tea<br>洋甘菊柚子綠茶</h3>
 							</div>
@@ -803,7 +686,7 @@
 							<p>
 								<small class="block">
 									<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script>| Made with <i class="icon-heart3" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> &amp; distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> Vons Food Pte Ltd | Made with <i class="icon-heart3" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> &amp; distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 								</small>
 							</p>
@@ -839,7 +722,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script>| Made
 	<script src="js/jquery.countTo.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
-	<!--Use onload to reset and set borders for the side bar-->
+	<!--Use onload to reset and set borders for the side bar (customized hence inline scripted)-->
 	<script>
 		$(document).ready(function() {
 						function isScrolledTo(elem) {
