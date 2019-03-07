@@ -60,18 +60,6 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
-	<style>
-		/* Note: Try to remove the following lines to see the effect of CSS positioning */
-		.affix {
-    top: 0;
-    width: 100%;
-    z-index: 9999 !important;
-	}
-	
-	.affix + .container-fluid {
-    padding-top: 70px;
-  }
-		</style>
 	</head>
 	<body>
 		
@@ -851,19 +839,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script>| Made
 	<script src="js/jquery.countTo.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
-	<!--Jerome - Custom Overrides-->
-	<!--<script>
-		$(window).scroll(function() {
-   var hT = $('#healthy-pastes').offset().top,
-       hH = $('#healthy-pastes').outerHeight(),
-       wH = $(window).height(),
-       wS = $(this).scrollTop();
-    console.log((hT-wH) , wS);
-   if (wS > (hT+hH-wH)){
-     alert('you have scrolled to the h1!');
-   }
-});
-	</script>-->
+	<!--Use onload to reset and set borders for the side bar-->
 	<script>
 		$(document).ready(function() {
 						function isScrolledTo(elem) {

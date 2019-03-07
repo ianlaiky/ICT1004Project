@@ -29,6 +29,18 @@
     color: whitesmoke;
   }
 
+/* Jerome - Navbar affix css*/
+	/* Note: Try to remove the following lines to see the effect of CSS positioning */
+  .affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+	}
+	
+	.affix + .container-fluid {
+    padding-top: 70px;
+  }
+
   /* Jerome - Modal css contents */
   /* The Modal (background) */
 .modal {
