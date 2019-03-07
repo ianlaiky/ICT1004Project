@@ -60,6 +60,18 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+	<style>
+		/* Note: Try to remove the following lines to see the effect of CSS positioning */
+		.affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+	}
+	
+	.affix + .container-fluid {
+    padding-top: 70px;
+  }
+		</style>
 	</head>
 	<body>
 		
@@ -116,13 +128,23 @@
 		</aside>
 
 		<!--Jerome - Persistant sticky side bar-->
-		<div id="sidebar" class="sidenav">
+		<div id="sidebar" class="sidenav visible-lg">
 			<a href="menu.html#snow-ice">Snow Ice</a>
 			<a href="menu.html#special-dessert">Special Desserts</a>
 			<a href="menu.html#cakes-and-dumplings">Cakes & Dumplings</a>
 			<a href="menu.html#healthy-pastes">Healthy pastes</a>
 			<a href="menu.html#drinks">Drinks</a>
-	  </div>
+		</div>
+
+		<nav class="navbar navbar-inverse visible-sm visible-xs visible-md" data-spy="affix" data-offset-top="710">
+			<ul class="nav navbar-nav">
+				<li><a href="menu.html#snow-ice">Snow Ice</a></li>
+				<li><a href="menu.html#special-dessert">Special Dessert</a></li>
+				<li><a href="menu.html#cakes-and-dumplings">Cakes and Dumplings</a></li>
+				<li><a href="menu.html#healthy-pastes">Healthy Pastes</a></li>
+				<li><a href="menu.html#drinks">Drinks</a></li>
+			</ul>
+		</nav>
 
 		<div id="colorlib-project">
 			<div id="snow-ice" class="container">
